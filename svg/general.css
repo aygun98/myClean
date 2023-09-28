@@ -1,0 +1,207 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;600;700&display=swap');
+
+@font-face {
+    font-family: fontBolt;
+    src: url(../assets/fonts/BebasNeue\ Bold.otf);
+}
+
+
+:root {
+    --font-bolt: fontBolt;
+    --primary1: #0E0E0E;
+    --primary2:#FDCE00;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-bolt);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary1);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 135px;
+    align-items: center;
+}
+
+/* header .logo{
+     
+} */
+header nav {
+    display: flex;
+    gap: 100px;
+    position: relative;
+}
+
+header .logo{
+    position: relative;
+    z-index: 0;
+}
+
+header nav .dil ul:first-child {
+    display: flex;
+    gap: 20px;
+}
+
+header nav .dil span {
+    color: #fff;
+}
+
+header nav button {
+    background-color: transparent;
+    border: none;
+}
+
+header nav .dil .dil-hover {
+    top: 30px;
+    position: absolute;
+    /* display: none; */
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 500ms;
+    opacity: 0;
+
+}
+
+header nav .dil:hover .dil-hover {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+header nav .dil:hover .fa-angle-up {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+header nav .dil ul {
+    list-style: none;
+    color: #fff;
+}
+.nav-bars-btn:hover{
+ font-variant: var(--primary2);
+}
+
+@media (max-width:992px) {
+    header {
+        padding: 34px 50px;
+    }
+
+    header nav .dil {
+        display: none;
+    }
+
+}
+
+@media (max-width:576px) {
+    header {
+        padding: 34px 20px;
+    }
+}
+
+/* overlay */
+.overlay-menu.active{
+    visibility: visible;
+}
+.overlay-menu {
+    background-color: var(--primary1);
+    position: fixed;
+    visibility: hidden;
+    /* opacity: 0; */
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+
+.overlay-menu .menu {
+    padding-top: 50px;
+    height: 100%;
+    display: flex;
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.overlay-menu .menu li {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    position: relative;
+    
+
+
+}
+
+.overlay-menu .menu li span {
+    position: absolute;
+   visibility: hidden;
+    /* padding-left: 100px; */
+    right: 0;
+    font-size: 30px;
+    
+    
+    
+    
+}
+.overlay-menu .menu li:hover span{
+    visibility: visible;
+    display: inline-block;
+    color: #FDCE00;
+    transform: translateX(100px);
+    transition:transform 1s;
+}
+.overlay-menu .menu a {
+
+    color: #fff;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    cursor: pointer;
+
+
+}
+
+.overlay-menu .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.fa-chevron-btn{
+    position: absolute;
+    color: #fff;
+    background-color:transparent;
+    border: none;
+   height: max-content;
+   font-size: 30px;
+   left: 60px;
+   top: 50px;
+  cursor: pointer;
+}
+.fa-chevron-btn:hover{
+    color: var(--primary2);
+}
+.overlay-menu .menu a:hover{
+    color: var(--primary2);
+}
