@@ -1,1 +1,118 @@
 @import url(../general.css);
+
+
+
+.basliq-section {
+    display: flex;
+    color: #fff;
+    max-height: 670px;
+    padding-top: 50px;
+ 
+   
+}
+
+.basliq-section .left {
+    padding-left: 135px;
+    max-width: 900px;
+    height: 100%;
+}
+
+.basliq-section .left h1 {
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: -1.8px;
+
+}
+
+.basliq-section .left h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--poppins);
+    max-width: 370px;
+}
+
+.basliq-section .left button {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+    font-family: var(--poppins);
+     background-color: transparent;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+}
+  
+.basliq-section .left button span{
+    display: inline-block;
+    background-color: var(--primary2);
+   width: 60px;
+   /* height: 60px; */
+   padding: 15px;
+   color: #000;
+   border-radius: 50px;
+   margin-left: 40px;
+}
+.basliq-section .right {
+    position: absolute;
+    z-index: -1;
+    right: 115px;
+    top: 0;
+   overflow: hidden;
+}
+
+.basliq-section .right .img {
+    background-image: url(../../assets/img/home/Rectangle\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 50vw;
+    max-height: 100%;
+   
+    height: 989px;
+   
+}
+@media (max-width:992px) {
+    .basliq-section .right{
+        right: 0px;
+    }
+    .basliq-section .left{
+        padding-left: 50px;
+    }
+}
+@media (max-width:768px) {
+    .basliq-section .left h1{
+        font-size: 80px;
+   
+
+    }
+    .basliq-section{
+        height: 600px;
+        width: 560px;
+    }
+    .basliq-section .right .img {
+        height: 600px;
+    }
+    .basliq-section .left h1{
+        margin: 0;
+        line-height:70px;
+    }
+}
+@media (max-width:576px) {
+    .basliq-section .left h1{
+        font-size: 50px;
+   
+
+    }
+    .basliq-section{
+       
+        width: 100%;
+    }
+    
+}
