@@ -1,0 +1,120 @@
+.home-xidmetler {}
+
+
+.home-xidmetler h2 {
+    text-align: center;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120px;
+    /* 100% */
+    letter-spacing: -1.8px;
+    color: var(--primary2);
+}
+
+.home-xidmetler .card h5 {
+    padding: 20px;
+    visibility: visible;
+    font-size: 25.946px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.189px;
+    /* 112.5% */
+    letter-spacing: -0.389px;
+}
+
+.home-xidmetler .card {
+    position: relative;
+    width: 300px;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+.home-xidmetler .card:hover h5{
+    visibility: hidden;
+
+}
+.home-xidmetler .card .img {
+    position: relative;
+    width: 100%;
+}
+.home-xidmetler .card .img::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   background-color:rgba(8, 5, 10, 0.39) ;
+   height: 100%;
+   top: 0;
+   left: 0;
+  transition: 1s;
+}
+
+.home-xidmetler .card img {
+    width: 100%;
+}
+.home-xidmetler .card:hover  .img::after{
+background-color: transparent;
+}
+
+.home-xidmetler span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    color: #fff;
+    /* z-index:1; */
+    top: 50px;
+    left: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    transition: 1s;
+    display: flex;
+    
+
+}
+.home-xidmetler .card:hover  span{
+    visibility: visible;
+    opacity: 1;
+}
+.home-xidmetler .card:hover .img{
+ transform: scale(1.3);
+}
+.home-xidmetler .card:hover .swiper-slide{
+ transform: translate(5px);
+}
+
+.home-xidmetler span h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.48px;
+}
+
+.home-xidmetler span p {
+    font-size: 16px;
+font-style: normal;
+font-weight: 200;
+line-height: 24px; 
+font-family: var(--poppins);
+text-align: start;
+}
+
+.home-xidmetler span button {
+    background-color: transparent;
+    border:none ;
+    
+}
+.home-xidmetler span button a{
+    font-family: var(--poppins);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+    letter-spacing: -0.48px;
+   color: #fff;
+    
+}

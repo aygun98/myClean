@@ -1,5 +1,7 @@
 @import url(../general.css);
 @import url(./number-section.css/number-section.css);
+@import url(./home-haqqimizda/home-haqqimizda.css);
+@import url(./home-xidmetler/home-xidmetler.css);
 
 
 .container{
@@ -15,7 +17,8 @@
 .basliq-section {
     display: flex;
     color: #fff;
-    max-height: 670px;
+    /* max-height: 670px; */
+    /* height: 100%; */
     padding-top: 50px;
  
    
@@ -67,6 +70,12 @@
    color: #000;
    border-radius: 50px;
    margin-left: 40px;
+}
+@media (max-width:782px) {
+   
+    .basliq-section .left h1{
+        margin-bottom: 2px;
+    }
 }
 .basliq-section .right {
     position: absolute;

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="../swiperhome.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
@@ -78,7 +80,7 @@
                 <div class="dil">
                     <ul>
                         <li>AZ </li>
-                        <span><i class="fa-solid fa-angle-up"></i></span>
+                        <span><a href=""><i class="fa-solid fa-angle-up"></i></a></span>
                     </ul>
                     <ul class="dil-hover">
                         <li>RU</li>
@@ -116,6 +118,142 @@
     </section>
 
 
+    <section class="home-haqqimizda">
+        <div class="left">
+            <h2>Haqqımızda</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+            <button><a href="">Ətraflı <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>
+        <div class="right">
+            <img src="../../assets/img/home/Rectangle 4.png" alt="">
+        </div>
+    </section>
+    <section class="home-xidmetler">
+       <h2>Xidmətlər</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img"><img src="../../assets/img/home/Rectangle 6.png" alt=""></div>
+                        <h5>Lorem ipsum dolor sit</h5>
+                        <span>
+                            <h3>Lorem ipsum dolor sit</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum</p>
+                           <button><a href="">Müraciət et</a></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img"><img src="../../assets/img/home/Rectangle 6-2.png" alt=""></div>
+                        <h5>Lorem ipsum dolor sit</h5>
+                        <span>
+                            <h3>Lorem ipsum dolor sit</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum</p>
+                           <button><a href="">Müraciət et</a></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img"><img src="../../assets/img/home/Rectangle 6-1.png" alt=""></div>
+                        <h5>Lorem ipsum dolor sit</h5>
+                        <span>
+                            <h3>Lorem ipsum dolor sit</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum</p>
+                           <button><a href="">Müraciət et</a></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img"><img src="../../assets/img/home/Rectangle 6.png" alt=""></div>
+                        <h5>Lorem ipsum dolor sit</h5>
+                        <span>
+                            <h3>Lorem ipsum dolor sit</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum</p>
+                           <button><a href="">Müraciət et</a></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img"><img src="../../assets/img/home/Rectangle 6-2.png" alt=""></div>
+                        <h5>Lorem ipsum dolor sit</h5>
+                        <span>
+                            <h3>Lorem ipsum dolor sit</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum</p>
+                           <button><a href="">Müraciət et</a></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img"><img src="../../assets/img/home/Rectangle 6-1.png" alt=""></div>
+                        <h5>Lorem ipsum dolor sit</h5>
+                        <span>
+                            <h3>Lorem ipsum dolor sit</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum</p>
+                           <button><a href="">Müraciət et</a></button>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+
+
+    <section class="home-mehsullar">
+        <h1>Məhsullar</h1>
+        <button> <a href="">Daha çox <i class="fa-solid fa-arrow-right"></i></a> </button>
+        <div></div>
+    </section>
+
+  
+   
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+     freeMode: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   
+   breakpoints: {
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1030: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+ </script>
+   
+    </script>
     <script type="module" src="../index.js"></script>
 </body>
 
