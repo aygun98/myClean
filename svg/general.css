@@ -270,9 +270,7 @@ header nav .dil ul li {
     .overlay-menu .menu >ul{
         gap: 15px;
     }
-    .overlay-menu .menu >ul li a{
-       
-    }
+   
 }
 @media (max-width:768px) {
     .overlay-menu .menu{

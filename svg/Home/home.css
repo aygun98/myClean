@@ -1,7 +1,17 @@
 @import url(../general.css);
+@import url(./number-section.css/number-section.css);
 
 
+.container{
+    position: relative;
+    height: 900px;
+}
+@media (max-width:768px) {
+    .container{
 
+        height: 600px;
+    }
+}
 .basliq-section {
     display: flex;
     color: #fff;
@@ -64,6 +74,8 @@
     right: 115px;
     top: 0;
    overflow: hidden;
+   height: 900px;
+   /* overflow: hidden; */
 }
 
 .basliq-section .right .img {
@@ -75,7 +87,7 @@
     width: 50vw;
     max-height: 100%;
    
-    height: 989px;
+    height: 100%;
    
 }
 @media (max-width:992px) {
@@ -93,7 +105,7 @@
 
     }
     .basliq-section{
-        height: 600px;
+        /* height: 600px; */
         width: 560px;
     }
     .basliq-section .right .img {
