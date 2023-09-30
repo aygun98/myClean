@@ -6,6 +6,7 @@ const overLay = document.querySelector('.overlay-menu')
 
 bars.addEventListener('click', ()=>{
     overLay.classList.add('active')
+    
 })
 back.addEventListener('click', ()=>{
     overLay.classList.remove('active')
