@@ -1,0 +1,60 @@
+@import url(../../general.css);
+
+.haqqimizda-section{
+
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    gap: 20px;
+}
+.haqqimizda-section .boxes{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+}
+.haqqimizda-section .boxes p{
+    font-family: var(--poppins);
+
+}
+
+
+.haqqimizda-section .boxes .left.text{
+    
+   /* padding-left: 220px; */
+   padding-left: 10vw;
+}
+.haqqimizda-section .boxes .right.text{
+    padding-left: 10vw;
+    
+   /* padding-right: 220px; */
+}
+
+@media (max-width:1200px) {
+    .haqqimizda-section .boxes{
+        flex-direction: column;
+    }
+    .haqqimizda-section .bottom{
+        flex-direction: column-reverse;
+    }
+    .haqqimizda-section .boxes .left.text, .haqqimizda-section .boxes .right.text{
+        padding: 0  ;
+        width: 70vw;
+
+    }
+}
+
+@media (max-width:612px) {
+     .haqqimizda-section .boxes .img{
+        width: 100%;
+     }
+     .haqqimizda-section .boxes .img  img{
+        width: 100%;
+    }
+    .haqqimizda-section .boxes .left.text, .haqqimizda-section .boxes .right.text{
+        padding: 20px ;
+        width:100%;
+
+    }
+}
