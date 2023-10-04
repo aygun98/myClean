@@ -1,0 +1,48 @@
+@import url(../../general.css);
+.avtomobiller-section {
+    padding: 100px 0px;
+}
+.avtomobiller-section .boxes {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+
+
+}
+
+.avtomobiller-section .boxes .box {
+    width: 370px;
+   
+
+}
+
+.avtomobiller-section .boxes .box h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+
+}
+
+.avtomobiller-section .boxes .box span {
+
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 100% */
+    letter-spacing: -0.12px;
+}
+
+.avtomobiller-section .boxes .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+

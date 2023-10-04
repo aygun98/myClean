@@ -1,0 +1,76 @@
+@import url(../../general.css);
+
+.avtomobiller-section{
+    padding: 100px;
+}
+.avtomobiller-section .boxes {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.avtomobiller-section .boxes .box {
+    /* height: 286px; */
+    display: flex;
+    /* max-width: 800px; */
+    gap: 40px;
+}
+.avtomobiller-section .boxes .box .text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avtomobiller-section .boxes .box h3 {
+    margin: 0;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    /* 100% */
+    letter-spacing: -0.225px;
+}
+
+.avtomobiller-section .boxes .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.avtomobiller-section .boxes .box button {
+    background-color: transparent;
+    font-family: var(--poppins);
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 100% */
+    letter-spacing: -0.48px;
+}
+
+@media (max-width:992px) {
+    .avtomobiller-section{
+        padding: 100px 20px;
+    }
+    .avtomobiller-section .boxes .box{
+     flex-direction: column;
+     align-items:  baseline;
+     /* background-color: antiquewhite; */
+ 
+     margin: 0 auto;
+    }
+   
+    .avtomobiller-section .boxes .box .img img{
+         width: 100%;
+         /* object-fit: cover; */
+    } 
+}
