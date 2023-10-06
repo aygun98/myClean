@@ -24,12 +24,13 @@
     --font-bolt: fontBolt;
     --primary1: #0E0E0E;
     --primary2: #FDCE00;
+    --primary3: #232323;
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--font-bolt);
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 
 }
 
@@ -375,7 +376,40 @@ footer h6 {
     font-weight: 400;
     line-height: normal;
 }
-
+.haqqimizda-basliq span h6 a{
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+.haqqimizda-basliq span h6:last-child a{
+    color: #FDCE00;
+}
+@media (max-width:800px){
+    .haqqimizda-basliq>span{
+        padding-left: 17px;
+    }
+}
+@media (max-width:576px) {
+    .haqqimizda-basliq span h6:first-child {
+        /* color: var(--primary2); */
+        display: none;
+    }
+    .haqqimizda-basliq span h6:nth-of-type(2) {
+        /* color: var(--primary2); */
+        display: none;
+    }
+    .haqqimizda-basliq span:nth-of-type(2) {
+        /* color: var(--primary2); */
+        display: none;
+    }
+    .haqqimizda-basliq>span{
+        padding-left: 50px;
+    }
+    
+}
 .haqqimizda-basliq span h6:last-child {
     color: var(--primary2);
 }

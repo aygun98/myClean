@@ -1,0 +1,80 @@
+@import url(../../../general.css);
+
+.temizlenme-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 80px;
+}
+.temizlenme-section .box:last-child{
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.temizlenme-section .box {
+    display: flex;
+    flex-wrap: wrap;
+
+    color: #fff;
+    gap: 70px;
+}
+
+
+.temizlenme-section .box .text{
+    max-width: 470px;
+}
+.temizlenme-section .box .img{
+    width: 636px;
+}
+.temizlenme-section .box .img img{
+    width: 100%;
+}
+.temizlenme-section .box h2 {
+    margin-top: 0;
+    color: var(--primary2);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    /* 100% */
+    letter-spacing: -0.225px;
+}
+
+.temizlenme-section .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.temizlenme-section .box a {
+    color: #FFF;
+    font-family: var(--poppins);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 100% */
+    letter-spacing: -0.48px;
+}
+.temizlenme-section .fa-arrow-right{
+    transform: rotate(30deg);
+    margin-left: 30px;
+}
+@media (max-width:1182px) {
+      .temizlenme-section .box{
+        justify-content: center;
+        align-items: center;
+      }
+      .temizlenme-section .box .img{
+        /* width: 100%; */
+    }
+}
+@media (max-width:662px) {
+      
+      .temizlenme-section .box .img{
+        width: 100%;
+    }
+}

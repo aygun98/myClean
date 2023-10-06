@@ -50,7 +50,6 @@
     color: #fff;
 }
 .xidmetler-section .boxes .box button{
-    font-family: var(--poppins);
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -58,6 +57,10 @@
     letter-spacing: -0.48px;
     background-color: transparent;
     border: none;
+    color: #fff;
+}
+.xidmetler-section .boxes .box button a{
+    font-family: var(--poppins);
     color: #fff;
 }
 .xidmetler-section .boxes .box button .fa-arrow-right{

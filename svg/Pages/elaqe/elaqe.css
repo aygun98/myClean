@@ -1,0 +1,10 @@
+@import url(../../general.css);
+@import url(../../Home/home.css);
+
+
+@media (max-width:768px) {
+    .elaqe-container{
+
+        height: 800px;
+    }
+}

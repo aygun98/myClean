@@ -1,0 +1,176 @@
+@import url(../../../general.css);
+
+.muraciyyet-formu {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+}
+
+.muraciyyet-formu form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 50%;
+    /* gap: 20px; */
+    justify-content: space-between;
+    font-family: var(--poppins);
+    margin: 0 auto;
+
+}
+
+.muraciyyet-formu .img {
+    /* margin: 0 auto; */
+}
+
+.muraciyyet-formu button {
+    cursor: pointer;
+    background-color: var(--primary2);
+    border: none;
+    align-self: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: var(--poppins);
+
+}
+
+.muraciyyet-formu form>span {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.muraciyyet-formu form>span>span {
+    border-bottom: 1px solid #fff;
+    width: 270px;
+}
+
+.muraciyyet-formu form input,
+select {
+    /* height: max-content; */
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-family: var(--poppins);
+    padding: 15px;
+    outline: none;
+}
+
+.muraciyyet-formu form select option {
+    background-color: var(--primary3);
+    color: #fff;
+    font-family: var(--poppins);
+    border: none;
+
+
+}
+.tesdiq-contain{
+    position: relative;
+}
+.tesdiq.aktivbox{
+
+    display: flex;
+}
+.tesdiq{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: #000000bd;
+    position: absolute;
+    width: 100%;
+    /* height: 100vh; */
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.tesdiq div{
+    width: 350px;
+    position: relative;
+    
+    height: 150px;
+    background-color: var(--primary2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tesdiq span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:1299px) {
+    .muraciyyet-formu {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .muraciyyet-formu .img {
+        margin: 0 auto;
+
+    }
+
+    .muraciyyet-formu form {
+        /* height: 500px; */
+        width: 70%;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+    }
+
+    .muraciyyet-formu form>span {
+        /* align-items: center; */
+
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:806px) {
+    .muraciyyet-formu form {
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .muraciyyet-formu form>span {
+        justify-content: space-around;
+
+        width: 100%;
+
+    }
+}
+
+@media (max-width:615px) {
+    .muraciyyet-formu form {
+        width: 90%;
+
+        gap: 15px;
+    }
+
+    .muraciyyet-formu form>span {
+        padding: 0;
+    }
+
+    .muraciyyet-formu form>span>span {
+
+        width: 100%;
+        padding: 15px 0;
+
+    }
+
+    .muraciyyet-formu input {
+        width: 100%;
+    }
+
+    .muraciyyet-formu .img {
+        width: 100%;
+    }
+
+    .muraciyyet-formu .img img {
+        width: 100%;
+    }
+}

@@ -56,7 +56,10 @@
     /* 100% */
     letter-spacing: -0.48px;
 }
-
+.avtomobiller-section .boxes .box button .fa-arrow-right{
+    transform: rotate(30deg);
+    margin-left: 40px;
+}
 @media (max-width:992px) {
     .avtomobiller-section{
         padding: 100px 20px;
