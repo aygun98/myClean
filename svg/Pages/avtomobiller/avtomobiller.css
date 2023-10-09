@@ -8,8 +8,11 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+   color: #fff;
+    
+}
+.avtomobiller-section .boxes a{
     color: #fff;
-
 
 }
 

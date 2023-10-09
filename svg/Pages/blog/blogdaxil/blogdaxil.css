@@ -1,0 +1,41 @@
+@import url(../../../general.css);
+
+
+.haqqimizda-basliq .blog-basliq{
+    /* font-size: 100px; */
+bottom: -160px;
+left: 4%;
+}
+@media (max-width:1031px) {
+    .haqqimizda-basliq .blog-basliq{
+        font-size: 70px;
+       line-height: 100px;
+       /* line-height: 110px; */
+    letter-spacing: -1.8px;
+    bottom: -100px;
+    }
+}
+@media (max-width:600px) {
+    .haqqimizda-basliq .blog-basliq{
+        font-size: 60px;
+       line-height: 90px;
+       /* line-height: 110px; */
+    letter-spacing: -1.8px;
+    bottom: -100px;
+    }
+}
+@media (max-width:500px) {
+    .haqqimizda-basliq .blog-basliq{
+        font-size: 40px;
+       line-height: 50px;
+       /* line-height: 110px; */
+    letter-spacing: -1.8px;
+    bottom: -30px;
+    }
+}
+
+
+.blog-daxil{
+    padding-top: 100px;
+    color: #fff;
+}

@@ -1,0 +1,139 @@
+@import url(../../../general.css);
+@import url(../avtomobildaxil/avto-swiper.css);
+
+.avtomobil-daxil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: baseline; */
+}
+
+.avtomobil-daxil .imges {
+    max-width: 570px;
+}
+
+.avtomobil-daxil .text {
+    max-width: 470px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.avtomobil-daxil .text .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.avtomobil-daxil .text .list>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.avtomobil-daxil .text h2 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    /* 100% */
+    letter-spacing: -0.225px;
+    color: var(--primary2);
+    margin-top: 0;
+}
+
+.avtomobil-daxil .text span {
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 100% */
+    letter-spacing: -0.12px;
+}
+
+.avtomobil-daxil .text p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.avtomobil-daxil .list h6 {
+    color: #FFF;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 15px 0;
+}
+
+.avtomobil-daxil .list span {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.avtomobil-daxil .imges .box {
+    padding-top: 30px;
+    color: #fff;
+    font-family: var(--poppins);
+
+}
+
+.avtomobil-daxil .imges .box>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+
+}
+
+.avtomobil-daxil .imges .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    color: #fefe;
+    font-family: var(--poppins);
+}
+.avtomobil-daxil .right-box{
+    display: none;
+    align-self: center;
+}
+@media (max-width:1177px) {
+     .avtomobil-daxil .left-box{
+        display: none;
+     }
+     .avtomobil-daxil .right-box{
+        display: flex;
+     }
+    .avtomobil-daxil{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+    .avtomobil-daxil .text{
+        max-width: 70%;
+    }
+    .avtomobil-daxil .imges {
+        max-width: 70%;
+    }
+    .avtomobil-daxil .imges img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width:576px) {
+    .avtomobil-daxil .text{
+        max-width: 90%;
+    }
+    .avtomobil-daxil .imges {
+        max-width: 90%;
+    }
+}

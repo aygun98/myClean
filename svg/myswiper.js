@@ -66,7 +66,7 @@
     });
     
 //swiper3
-    var swiper2 = new Swiper(".home-avtomobiller-swiper", {
+    var swiper3 = new Swiper(".home-avtomobiller-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         autoplay: {
@@ -97,7 +97,7 @@
     });
 
     //swiper4
-    var swiper2 = new Swiper(".home-blog-swiper", {
+    var swiper4 = new Swiper(".home-blog-swiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         autoplay: {
@@ -119,3 +119,24 @@
           
         },
     });
+    
+
+    //swiper5
+
+
+    var swiper5 = new Swiper(".mySwiper-avto", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper6 = new Swiper(".mySwiper2-avto", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper5,
+        },
+      });

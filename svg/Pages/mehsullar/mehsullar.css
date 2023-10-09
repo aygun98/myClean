@@ -13,7 +13,9 @@
 
 
 }
-
+.mehsullar-section .boxes a{
+    color: #fff;
+}
 .mehsullar-section .boxes .box {
     width: 270px;
    

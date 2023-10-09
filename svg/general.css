@@ -33,7 +33,9 @@
     /* outline: 1px solid red; */
 
 }
-
+button{
+    cursor: pointer;
+}
 a {
     text-decoration: none;
 }

@@ -3,10 +3,15 @@
  const tesdiqCross= document.querySelector('.tesdiq-cross')
 
 
- muraciyyetbtn.addEventListener('click',(e)=>{
-    e.preventdefault()
+//  window.addEventListener('load', ()=>{
+//    tesdiqBox.classList.remove('aktivbox')
+//  })
+ muraciyyetbtn.addEventListener('click', (e)=>{
+   //  e.preventdefault()
     tesdiqBox.classList.add('aktivbox')
+    alert('salam')
  })
- tesdiqCross.addEventListener('click',()=>{
+ 
+ tesdiqCross.addEventListener('click', ()=>{
     tesdiqBox.classList.remove('aktivbox')
  })
