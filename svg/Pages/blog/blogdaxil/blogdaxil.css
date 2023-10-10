@@ -1,41 +1,224 @@
 @import url(../../../general.css);
 
 
-.haqqimizda-basliq .blog-basliq{
+.haqqimizda-basliq .blog-basliq {
     /* font-size: 100px; */
-bottom: -160px;
-left: 4%;
+    bottom: -160px;
+    left: 4%;
 }
+
 @media (max-width:1031px) {
-    .haqqimizda-basliq .blog-basliq{
+    .haqqimizda-basliq .blog-basliq {
         font-size: 70px;
-       line-height: 100px;
-       /* line-height: 110px; */
-    letter-spacing: -1.8px;
-    bottom: -100px;
+        line-height: 100px;
+        /* line-height: 110px; */
+        letter-spacing: -1.8px;
+        bottom: -100px;
     }
 }
+
 @media (max-width:600px) {
-    .haqqimizda-basliq .blog-basliq{
+    .haqqimizda-basliq .blog-basliq {
         font-size: 60px;
-       line-height: 90px;
-       /* line-height: 110px; */
-    letter-spacing: -1.8px;
-    bottom: -100px;
+        line-height: 90px;
+        /* line-height: 110px; */
+        letter-spacing: -1.8px;
+        bottom: -100px;
     }
 }
+
 @media (max-width:500px) {
-    .haqqimizda-basliq .blog-basliq{
+    .haqqimizda-basliq .blog-basliq {
         font-size: 40px;
-       line-height: 50px;
-       /* line-height: 110px; */
-    letter-spacing: -1.8px;
-    bottom: -30px;
+        line-height: 50px;
+        /* line-height: 110px; */
+        letter-spacing: -1.8px;
+        bottom: -30px;
     }
 }
 
 
-.blog-daxil{
-    padding-top: 100px;
+.blog-daxil {
+
+    padding: 100px 0 50px;
     color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.blog-daxil .left {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    gap: 40px;
+}
+
+.blog-daxil .left .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.blog-daxil .right {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.blog-daxil .right h3 {
+    color: var(--primary2);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    /* 100% */
+    letter-spacing: -0.225px;
+    margin-bottom: 12px;
+}
+
+.blog-daxil .right .box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-daxil .right .box h3 {
+    margin: 0;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    /* 100% */
+    letter-spacing: -0.225px;
+    /* margin-bottom: 0; */
+}
+
+.blog-daxil .right .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.blog-daxil .right .box button {
+    background-color: transparent;
+    font-family: var(--poppins);
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 100% */
+    letter-spacing: -0.48px;
+}
+
+.blog-daxil .right .box button .fa-arrow-right {
+    transform: rotate(30deg);
+    margin-left: 40px;
+}
+
+.blog-daxil .right2 {
+    display: none;
+}
+
+.blog-daxil .right2 h3 {
+    color: var(--primary2);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+
+    letter-spacing: -0.225px;
+    text-align: center;
+}
+
+.blog-daxil .right2 .box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.blog-daxil .right2 .box h3 {
+    color: var(--primary2);
+    margin: 0;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    /* 100% */
+    letter-spacing: -0.225px;
+}
+
+.blog-daxil .right2 .box p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.blog-daxil .right2 .box button {
+    background-color: transparent;
+    font-family: var(--poppins);
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 100% */
+    letter-spacing: -0.48px;
+}
+
+.blog-daxil .right2 .box button .fa-arrow-right {
+    transform: rotate(30deg);
+    margin-left: 40px;
+}
+
+@media (max-width:1130px) {
+    .blog-daxil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-daxil .left {
+        max-width: 90%;
+        /* display: flex; */
+    }
+
+    .blog-daxil .left .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .blog-daxil .right {
+        display: none;
+    }
+
+    .blog-daxil .right2 {
+        max-width: 90%;
+        display: inline-block;
+    }
+
+    .blog-daxil .right2 .box {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:700px) {
+    .blog-daxil .box img {
+        width: 100%;
+    }
 }
